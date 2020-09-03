@@ -1,0 +1,32 @@
+{
+   "version": "0.2.0",
+   "configurations": [
+      {
+         "name": "Local On Prem Server",
+         "type": "al",
+         "request": "launch",
+         "server": "http://localhost",
+         "serverInstance": "BC160",
+         "port": 7049,
+         "authentication": "Windows",
+         "breakOnError": true,
+         "breakOnRecordWrite": false,
+         "launchBrowser": true,
+         "enableSqlInformationDebugger": true,
+         "enableLongRunningSqlStatements": true,
+         "longRunningSqlStatementsThreshold": 500,
+         "numberOfSqlStatements": 10
+      },
+      {
+         "name": "SaaS Sandbox",
+         "type": "al",
+         "request": "launch",
+         "tenant": "mfhcc.onmicrosoft.com",
+         "sandboxName": "Sandbox",
+         "breakOnError": true,
+         "launchBrowser": true,
+         "enableLongRunningSqlStatements": true,
+         "enableSqlInformationDebugger": true
+      }
+   ]
+}
